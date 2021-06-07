@@ -12,6 +12,11 @@ public class UserManager implements UserService{
 	private UserDao userDao;
 	
 
+	public UserManager(UserDao userDao) {
+		super();
+		this.userDao = userDao;
+	}
+
 	@Override
 	public void register(User user) {
 		
@@ -46,10 +51,6 @@ public class UserManager implements UserService{
 		}
 		
 	}
-
-	
-
-
 
 	@Override
 	public void confirm(User user) {

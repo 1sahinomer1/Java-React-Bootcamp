@@ -6,9 +6,7 @@ public interface UserService {
 	void register(User user);
 	
 	void login(User user);
-	
-	
-	
+
 	void confirm(User user);
 	
 	void registerWithAccount(User user);
